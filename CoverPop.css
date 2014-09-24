@@ -1,0 +1,110 @@
+/* Styles for the CoverPop.js plugin */
+
+
+html,
+body {
+    overflow: auto;
+}
+
+body {
+    position: relative;
+}
+
+.CoverPop-open,
+.CoverPop-open body {
+    overflow: hidden;
+}
+
+#CoverPop-cover {
+    display: none;
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    -webkit-animation: fade-in .25s ease-in;
+    -moz-animation-name: fade-in .25s ease-in;
+    -ms-animation-name: fade-in .25s ease-in;
+    -o-animation-name: fade-in .25s ease-in;
+    animation-name: fade-in .25s ease-in;
+}
+
+    .CoverPop-open #CoverPop-cover {
+        display: block;
+    }
+
+
+@-webkit-keyframes fade-in {
+    0% { opacity: 0; }
+    25% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+.splash * {
+	-moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;
+}
+
+.splash {
+	background-color:#333;
+	background-color:rgba(0,0,0,.6);
+}
+.splash-center {
+	position:relative;
+	width: 320px;
+	padding: 20px;
+	background: #fff;
+	margin: 10% auto 0;
+}
+
+
+.splash h4 {
+	position:relative; top:5px;
+	font-size:26px;
+	color:#333;
+}
+.splash .bannerimage {
+	display:block;
+	color:#fff;
+	position:relative;
+	margin-top:20px;
+	-webkit-transform: scale(1,1); -moz-transform: scale(1,1);
+	-webkit-transition-timing-function: ease-out; -moz-transition-timing-function: ease-out;
+	-webkit-transition-duration: 250ms; -moz-transition-duration: 250ms;
+}
+.splash .bannerimage img {
+	width:100%;
+}
+.splash .bannerimage p {
+	position:absolute; bottom:10px; left:0; right:0;
+	text-align:center;
+	font-size:18px;
+	text-transform:uppercase;
+	font-weight:bold;
+	text-shadow:1px 1px 4px rgba(0,0,0,.6);
+}
+
+.splash .bannerimage:hover {
+	-webkit-transform: scale(1.05,1.07); -moz-transform: scale(1.05,1.07); -ms-transform: scale(1.05,1.07); -o-transform: scale(1.05,1.07); transform: scale(1.05,1.07);
+	-webkit-transition-timing-function: ease-out; -moz-transition-timing-function: ease-out; -o-transition-timing-function: ease-out; transition-timing-function: ease-out;
+	-webkit-transition-duration: 250ms; -moz-transition-duration: 250ms; -o-transition-duration: 250ms; transition-duration: 250ms;
+}
+
+
+.CoverPop-close {
+	position:absolute; top:0; right:0;
+	display:block;
+	width:40px;
+	height:40px;
+	text-indent:-9000em;
+	background:#333 url(http://www1.iclicker.com/wp-content/themes/iclicker/assets/img/icon_times.png) 50% 50% no-repeat;
+}
+.CoverPop-close:hover {
+	background-color:#007fc2;
+}
+
+
+
+
